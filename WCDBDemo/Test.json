@@ -1,0 +1,8 @@
+{
+    "code": 200,
+    "result": [
+               {"id": "1", "name": "huangyaowu", "gender": 0},
+               {"id": "2", "name": "feiji", "gender": 0},
+               {"id": "3", "name": "feifen", "gender": 1},
+               ]
+}
