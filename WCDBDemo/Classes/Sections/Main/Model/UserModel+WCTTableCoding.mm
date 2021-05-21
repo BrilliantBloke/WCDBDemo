@@ -1,21 +1,14 @@
 //
-//  UserModel.m
+//  UserModel+WCTTableCoding.m
 //  WCDBDemo
 //
-//  Created by 黄耀武 on 2017/8/23.
+//  Created by 黄耀武 on 2017/8/24.
 //  Copyright © 2017年 yixin. All rights reserved.
 //
 
-#import "UserModel.h"
+#import "UserModel+WCTTableCoding.h"
 
-@implementation UserModel
-
-+ (NSDictionary *)modelCustomPropertyMapper {
-    return @{@"userID"      : @"id",
-             @"username"    : @"name",
-             @"gender"      : @"gender",
-             };
-}
+@implementation UserModel (WCTTableCoding)
 
 WCDB_IMPLEMENTATION(UserModel)
 

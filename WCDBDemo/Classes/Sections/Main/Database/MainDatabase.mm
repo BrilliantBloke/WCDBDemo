@@ -8,7 +8,7 @@
 
 #import "MainDatabase.h"
 #import <WCDB/WCDB.h>
-#import "UserModel.h"
+#import "UserModel+WCTTableCoding.h"
 #import "PathManager.h"
 
 @interface MainDatabase()

@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WCDB/WCDB.h>
 #import "YYModel.h"
 
 typedef NS_ENUM(NSInteger, UserGender) {
@@ -15,14 +14,10 @@ typedef NS_ENUM(NSInteger, UserGender) {
     UserGenderFemale     = 1,
 };
 
-@interface UserModel : NSObject <WCTTableCoding>
+@interface UserModel : NSObject
 
 @property (nonatomic, copy) NSString *userID;
 @property (nonatomic, copy) NSString *username;
 @property (nonatomic, assign) UserGender gender;
-
-WCDB_PROPERTY(userID)
-WCDB_PROPERTY(username)
-WCDB_PROPERTY(gender)
 
 @end
