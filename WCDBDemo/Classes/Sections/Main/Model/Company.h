@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YYModel.h"
 
 @interface Company : NSObject
-
 
 /**
  公司名

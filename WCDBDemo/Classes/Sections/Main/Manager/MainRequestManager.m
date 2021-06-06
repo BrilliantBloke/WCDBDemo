@@ -10,7 +10,7 @@
 #import "AFNetworking.h"
 #import "UserModel.h"
 
-static NSString *URLString = @"http://www.mocky.io/v2/599e44ef2500009407d303f0";
+static NSString *URLString = @"http://www.mocky.io/v2/599f81482c0000580351d4f8";
 
 @implementation MainRequestManager
 

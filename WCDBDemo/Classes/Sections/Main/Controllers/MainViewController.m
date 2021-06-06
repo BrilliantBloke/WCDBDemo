@@ -86,6 +86,7 @@
     }
     UserModel *model = [self.tableData objectAtIndex:indexPath.row];
     cell.textLabel.text = model.username;
+    cell.detailTextLabel.text = model.company.name;
     return cell;
 }
 

@@ -14,5 +14,6 @@
 WCDB_PROPERTY(userID)
 WCDB_PROPERTY(username)
 WCDB_PROPERTY(gender)
+WCDB_PROPERTY(company)
 
 @end

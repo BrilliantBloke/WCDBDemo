@@ -15,6 +15,7 @@
     return @{@"userID"      : @"id",
              @"username"    : @"name",
              @"gender"      : @"gender",
+             @"company"     : @"company",
              };
 }
 
@@ -23,7 +24,7 @@ WCDB_IMPLEMENTATION(UserModel)
 WCDB_SYNTHESIZE(UserModel, userID)
 WCDB_SYNTHESIZE(UserModel, username)
 WCDB_SYNTHESIZE(UserModel, gender)
-
+WCDB_SYNTHESIZE(UserModel, company)
 
 WCDB_PRIMARY(UserModel, userID)
 

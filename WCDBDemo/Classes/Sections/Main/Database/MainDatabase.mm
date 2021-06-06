@@ -38,8 +38,8 @@ static NSString * const UsersTableName = @"UsersTable";
         _database = [[WCTDatabase alloc] initWithPath:path];
         
         // 加密
-        NSData *cipherKey = [@"123456" dataUsingEncoding:NSASCIIStringEncoding];
-        [_database setCipherKey:cipherKey];
+//        NSData *cipherKey = [@"123456" dataUsingEncoding:NSASCIIStringEncoding];
+//        [_database setCipherKey:cipherKey];
         
         // 创建表、索引
         BOOL result = [_database createTableAndIndexesOfName:UsersTableName

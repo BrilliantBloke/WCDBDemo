@@ -21,7 +21,7 @@
     // Override point for customization after application launch.
     [self setupWindow];
     [self showMainView];
-    [self registerWCDBLog];
+//    [self registerWCDBLog];
     return YES;
 }
 

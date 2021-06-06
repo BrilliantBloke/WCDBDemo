@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "YYModel.h"
+#import "Company.h"
 
 typedef NS_ENUM(NSInteger, UserGender) {
     UserGenderMale       = 0,
@@ -16,8 +17,25 @@ typedef NS_ENUM(NSInteger, UserGender) {
 
 @interface UserModel : NSObject
 
-@property (nonatomic, copy) NSString *userID;
-@property (nonatomic, copy) NSString *username;
-@property (nonatomic, assign) UserGender gender;
+/**
+ 用户ID
+ */
+@property (nonatomic, copy)     NSString    *userID;
+
+/**
+ 用户名
+ */
+@property (nonatomic, copy)     NSString    *username;
+
+/**
+ 性别
+ */
+@property (nonatomic, assign)   UserGender  gender;
+
+/**
+ 公司
+ */
+@property (nonatomic, strong)   Company     *company;
+
 
 @end
