@@ -17,11 +17,12 @@
 		B72801CB1F4D2EE00084B63A /* MainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B72801CA1F4D2EE00084B63A /* MainManager.m */; };
 		B72801CE1F4D2EF70084B63A /* MainRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B72801CD1F4D2EF70084B63A /* MainRequestManager.m */; };
 		B72801D11F4D2F0A0084B63A /* MainDatabase.mm in Sources */ = {isa = PBXBuildFile; fileRef = B72801D01F4D2F0A0084B63A /* MainDatabase.mm */; };
-		B72801D51F4D5FF30084B63A /* UserModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = B72801D41F4D5FF30084B63A /* UserModel.mm */; };
+		B72801D51F4D5FF30084B63A /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B72801D41F4D5FF30084B63A /* UserModel.m */; };
 		B72801DA1F4D680B0084B63A /* PathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B72801D91F4D680B0084B63A /* PathManager.m */; };
 		B73374EB1F4E7B7600158ABE /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = B73374EA1F4E7B7600158ABE /* Company.m */; };
 		B73374ED1F4E7D6900158ABE /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = B73374EC1F4E7D6900158ABE /* Test.json */; };
 		B73374F61F4FB7BC00158ABE /* Company+WCTColumnCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = B73374F51F4FB7BC00158ABE /* Company+WCTColumnCoding.mm */; };
+		B73374F91F4FC11B00158ABE /* UserModel+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = B73374F81F4FC11B00158ABE /* UserModel+WCTTableCoding.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,14 +47,15 @@
 		B72801CF1F4D2F0A0084B63A /* MainDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDatabase.h; sourceTree = "<group>"; };
 		B72801D01F4D2F0A0084B63A /* MainDatabase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainDatabase.mm; sourceTree = "<group>"; };
 		B72801D31F4D5FF30084B63A /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
-		B72801D41F4D5FF30084B63A /* UserModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UserModel.mm; sourceTree = "<group>"; };
+		B72801D41F4D5FF30084B63A /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		B72801D81F4D680B0084B63A /* PathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathManager.h; sourceTree = "<group>"; };
 		B72801D91F4D680B0084B63A /* PathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathManager.m; sourceTree = "<group>"; };
 		B73374E91F4E7B7600158ABE /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
 		B73374EA1F4E7B7600158ABE /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
 		B73374EC1F4E7D6900158ABE /* Test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
-		B73374F11F4EC61C00158ABE /* UserModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserModel+WCTTableCoding.h"; sourceTree = "<group>"; };
 		B73374F51F4FB7BC00158ABE /* Company+WCTColumnCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "Company+WCTColumnCoding.mm"; sourceTree = "<group>"; };
+		B73374F71F4FC11B00158ABE /* UserModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		B73374F81F4FC11B00158ABE /* UserModel+WCTTableCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UserModel+WCTTableCoding.mm"; sourceTree = "<group>"; };
 		BC2FB12B2CECDD47F6FF7EF2 /* Pods-WCDBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCDBDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCDBDemo/Pods-WCDBDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,8 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				B72801D31F4D5FF30084B63A /* UserModel.h */,
-				B72801D41F4D5FF30084B63A /* UserModel.mm */,
-				B73374F11F4EC61C00158ABE /* UserModel+WCTTableCoding.h */,
+				B72801D41F4D5FF30084B63A /* UserModel.m */,
+				B73374F71F4FC11B00158ABE /* UserModel+WCTTableCoding.h */,
+				B73374F81F4FC11B00158ABE /* UserModel+WCTTableCoding.mm */,
 				B73374E91F4E7B7600158ABE /* Company.h */,
 				B73374EA1F4E7B7600158ABE /* Company.m */,
 				B73374F51F4FB7BC00158ABE /* Company+WCTColumnCoding.mm */,
@@ -342,8 +345,9 @@
 			files = (
 				B72801DA1F4D680B0084B63A /* PathManager.m in Sources */,
 				B72801CB1F4D2EE00084B63A /* MainManager.m in Sources */,
+				B73374F91F4FC11B00158ABE /* UserModel+WCTTableCoding.mm in Sources */,
 				B72801D11F4D2F0A0084B63A /* MainDatabase.mm in Sources */,
-				B72801D51F4D5FF30084B63A /* UserModel.mm in Sources */,
+				B72801D51F4D5FF30084B63A /* UserModel.m in Sources */,
 				B73374F61F4FB7BC00158ABE /* Company+WCTColumnCoding.mm in Sources */,
 				B72801A31F4D1CD30084B63A /* AppDelegate.mm in Sources */,
 				B72801C71F4D2E8A0084B63A /* MainViewController.m in Sources */,

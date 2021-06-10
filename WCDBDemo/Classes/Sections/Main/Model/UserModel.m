@@ -7,7 +7,6 @@
 //
 
 #import "UserModel.h"
-#import "UserModel+WCTTableCoding.h"
 
 @implementation UserModel
 
@@ -18,16 +17,5 @@
              @"company"     : @"company",
              };
 }
-
-WCDB_IMPLEMENTATION(UserModel)
-
-WCDB_SYNTHESIZE(UserModel, userID)
-WCDB_SYNTHESIZE(UserModel, username)
-WCDB_SYNTHESIZE(UserModel, gender)
-WCDB_SYNTHESIZE(UserModel, company)
-
-WCDB_PRIMARY(UserModel, userID)
-
-WCDB_INDEX(UserModel, "_index", userID)
 
 @end

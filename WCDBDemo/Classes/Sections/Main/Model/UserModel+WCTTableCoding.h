@@ -2,7 +2,7 @@
 //  UserModel+WCTTableCoding.h
 //  WCDBDemo
 //
-//  Created by 黄耀武 on 2017/8/24.
+//  Created by 黄耀武 on 2017/8/25.
 //  Copyright © 2017年 yixin. All rights reserved.
 //
 
