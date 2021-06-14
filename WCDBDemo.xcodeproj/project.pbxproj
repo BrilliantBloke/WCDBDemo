@@ -23,6 +23,8 @@
 		B73374ED1F4E7D6900158ABE /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = B73374EC1F4E7D6900158ABE /* Test.json */; };
 		B73374F61F4FB7BC00158ABE /* Company+WCTColumnCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = B73374F51F4FB7BC00158ABE /* Company+WCTColumnCoding.mm */; };
 		B73374F91F4FC11B00158ABE /* UserModel+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = B73374F81F4FC11B00158ABE /* UserModel+WCTTableCoding.mm */; };
+		B73374FC1F4FC46400158ABE /* UserDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B73374FB1F4FC46400158ABE /* UserDetailModel.m */; };
+		B73374FF1F4FC50000158ABE /* UserDetailModel+WCTTableCoding.mm in Sources */ = {isa = PBXBuildFile; fileRef = B73374FE1F4FC50000158ABE /* UserDetailModel+WCTTableCoding.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,10 @@
 		B73374F51F4FB7BC00158ABE /* Company+WCTColumnCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "Company+WCTColumnCoding.mm"; sourceTree = "<group>"; };
 		B73374F71F4FC11B00158ABE /* UserModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserModel+WCTTableCoding.h"; sourceTree = "<group>"; };
 		B73374F81F4FC11B00158ABE /* UserModel+WCTTableCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UserModel+WCTTableCoding.mm"; sourceTree = "<group>"; };
+		B73374FA1F4FC46400158ABE /* UserDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailModel.h; sourceTree = "<group>"; };
+		B73374FB1F4FC46400158ABE /* UserDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailModel.m; sourceTree = "<group>"; };
+		B73374FD1F4FC50000158ABE /* UserDetailModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserDetailModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		B73374FE1F4FC50000158ABE /* UserDetailModel+WCTTableCoding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UserDetailModel+WCTTableCoding.mm"; sourceTree = "<group>"; };
 		BC2FB12B2CECDD47F6FF7EF2 /* Pods-WCDBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCDBDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCDBDemo/Pods-WCDBDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -196,6 +202,10 @@
 				B72801D41F4D5FF30084B63A /* UserModel.m */,
 				B73374F71F4FC11B00158ABE /* UserModel+WCTTableCoding.h */,
 				B73374F81F4FC11B00158ABE /* UserModel+WCTTableCoding.mm */,
+				B73374FA1F4FC46400158ABE /* UserDetailModel.h */,
+				B73374FB1F4FC46400158ABE /* UserDetailModel.m */,
+				B73374FD1F4FC50000158ABE /* UserDetailModel+WCTTableCoding.h */,
+				B73374FE1F4FC50000158ABE /* UserDetailModel+WCTTableCoding.mm */,
 				B73374E91F4E7B7600158ABE /* Company.h */,
 				B73374EA1F4E7B7600158ABE /* Company.m */,
 				B73374F51F4FB7BC00158ABE /* Company+WCTColumnCoding.mm */,
@@ -343,9 +353,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73374FF1F4FC50000158ABE /* UserDetailModel+WCTTableCoding.mm in Sources */,
 				B72801DA1F4D680B0084B63A /* PathManager.m in Sources */,
 				B72801CB1F4D2EE00084B63A /* MainManager.m in Sources */,
 				B73374F91F4FC11B00158ABE /* UserModel+WCTTableCoding.mm in Sources */,
+				B73374FC1F4FC46400158ABE /* UserDetailModel.m in Sources */,
 				B72801D11F4D2F0A0084B63A /* MainDatabase.mm in Sources */,
 				B72801D51F4D5FF30084B63A /* UserModel.m in Sources */,
 				B73374F61F4FB7BC00158ABE /* Company+WCTColumnCoding.mm in Sources */,

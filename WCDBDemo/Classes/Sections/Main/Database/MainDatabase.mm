@@ -7,8 +7,9 @@
 //
 
 #import "MainDatabase.h"
-#import "UserModel+WCTTableCoding.h"
 #import "PathManager.h"
+#import "UserModel+WCTTableCoding.h"
+#import "UserDetailModel+WCTTableCoding.h"
 
 @interface MainDatabase()
 
@@ -16,7 +17,8 @@
 
 @end
 
-static NSString * const UsersTableName = @"UsersTable";
+static NSString * const UsersTableName      = @"UsersTable";
+static NSString * const UserDetailTableName = @"UserDetailTable";
 
 @implementation MainDatabase
 
@@ -45,6 +47,9 @@ static NSString * const UsersTableName = @"UsersTable";
         BOOL result = [_database createTableAndIndexesOfName:UsersTableName
                                                    withClass:UserModel.class];
         
+        BOOL result1 = [_database createTableAndIndexesOfName:UserDetailTableName
+                                                   withClass:UserDetailModel.class];
+        
     }
     return _database;
 }
@@ -54,6 +59,10 @@ static NSString * const UsersTableName = @"UsersTable";
 - (BOOL)insertUsers:(NSArray<UserModel *> *)users {
     return [self.database insertOrReplaceObjects:users
                                             into:UsersTableName];
+}
+
+- (BOOL)insertUserDetail:(UserDetailModel *)userDetail {
+    return [self.database insertOrReplaceObject:userDetail into:UserDetailTableName];
 }
 
 #pragma mark - 删

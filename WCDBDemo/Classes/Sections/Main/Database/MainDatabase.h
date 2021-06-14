@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class UserModel;
+@class UserDetailModel;
 
 @interface MainDatabase : NSObject
 
@@ -17,6 +18,7 @@
  增
  */
 - (BOOL)insertUsers:(NSArray<UserModel *> *)users;
+- (BOOL)insertUserDetail:(UserDetailModel *)userDetail;
 
 /**
  删

@@ -45,6 +45,13 @@
     return NO;
 }
 
+- (BOOL)saveUserDetail:(UserDetailModel *)userDetail {
+    if (userDetail) {
+        return [[MainDatabase shared] insertUserDetail:userDetail];
+    }
+    return NO;
+}
+
 - (NSArray<UserModel *> *)getCachedUserList {
     return [[MainDatabase shared] getUserList];
 }
